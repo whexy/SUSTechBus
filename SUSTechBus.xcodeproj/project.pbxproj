@@ -64,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		6BDBDAE573E3236D6D06B011 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		6BDBDC55A6FC3AEAECE9C4B1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		EC34F7D6249A359E00A49026 /* SUSTechBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUSTechBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC34F7DA249A359E00A49026 /* SUSTechBus WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUSTechBus WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC34F7E0249A359E00A49026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 				EC34F7ED249A35A200A49026 /* SUSTechBus WatchKit Extension */,
 				EC34F7D7249A359E00A49026 /* Products */,
 				6BDBDAE573E3236D6D06B011 /* .gitignore */,
+				6BDBDC55A6FC3AEAECE9C4B1 /* README */,
 			);
 			sourceTree = "<group>";
 		};
