@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC34F7DB249A359E00A49026 /* SUSTechBus WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC34F7DA249A359E00A49026 /* SUSTechBus WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC34F7E1249A359E00A49026 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC34F7DF249A359E00A49026 /* Interface.storyboard */; };
+		EC34F7E3249A35A200A49026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC34F7E2249A35A200A49026 /* Assets.xcassets */; };
+		EC34F7EA249A35A200A49026 /* SUSTechBus WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC34F7E9249A35A200A49026 /* SUSTechBus WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC34F7EF249A35A200A49026 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34F7EE249A35A200A49026 /* ContentView.swift */; };
+		EC34F7F1249A35A200A49026 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34F7F0249A35A200A49026 /* HostingController.swift */; };
+		EC34F7F3249A35A200A49026 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34F7F2249A35A200A49026 /* ExtensionDelegate.swift */; };
+		EC34F7F5249A35A300A49026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC34F7F4249A35A300A49026 /* Assets.xcassets */; };
+		EC34F7F8249A35A300A49026 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC34F7F7249A35A300A49026 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC34F7DC249A359E00A49026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC34F7D0249A359E00A49026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC34F7D9249A359E00A49026;
+			remoteInfo = "SUSTechBus WatchKit App";
+		};
+		EC34F7EB249A35A200A49026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC34F7D0249A359E00A49026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC34F7E8249A35A200A49026;
+			remoteInfo = "SUSTechBus WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC34F7FF249A35A300A49026 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EC34F7EA249A35A200A49026 /* SUSTechBus WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC34F803249A35A300A49026 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EC34F7DB249A359E00A49026 /* SUSTechBus WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC34F7D6249A359E00A49026 /* SUSTechBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUSTechBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC34F7DA249A359E00A49026 /* SUSTechBus WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUSTechBus WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC34F7E0249A359E00A49026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EC34F7E2249A35A200A49026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC34F7E4249A35A200A49026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC34F7E9249A35A200A49026 /* SUSTechBus WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SUSTechBus WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC34F7EE249A35A200A49026 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC34F7F0249A35A200A49026 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		EC34F7F2249A35A200A49026 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EC34F7F4249A35A300A49026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC34F7F7249A35A300A49026 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC34F7F9249A35A300A49026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC34F7E6249A35A200A49026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC34F7CF249A359E00A49026 = {
+			isa = PBXGroup;
+			children = (
+				EC34F7DE249A359E00A49026 /* SUSTechBus WatchKit App */,
+				EC34F7ED249A35A200A49026 /* SUSTechBus WatchKit Extension */,
+				EC34F7D7249A359E00A49026 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC34F7D7249A359E00A49026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC34F7D6249A359E00A49026 /* SUSTechBus.app */,
+				EC34F7DA249A359E00A49026 /* SUSTechBus WatchKit App.app */,
+				EC34F7E9249A35A200A49026 /* SUSTechBus WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC34F7DE249A359E00A49026 /* SUSTechBus WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EC34F7DF249A359E00A49026 /* Interface.storyboard */,
+				EC34F7E2249A35A200A49026 /* Assets.xcassets */,
+				EC34F7E4249A35A200A49026 /* Info.plist */,
+			);
+			path = "SUSTechBus WatchKit App";
+			sourceTree = "<group>";
+		};
+		EC34F7ED249A35A200A49026 /* SUSTechBus WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC34F7EE249A35A200A49026 /* ContentView.swift */,
+				EC34F7F0249A35A200A49026 /* HostingController.swift */,
+				EC34F7F2249A35A200A49026 /* ExtensionDelegate.swift */,
+				EC34F7F4249A35A300A49026 /* Assets.xcassets */,
+				EC34F7F9249A35A300A49026 /* Info.plist */,
+				EC34F7F6249A35A300A49026 /* Preview Content */,
+			);
+			path = "SUSTechBus WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EC34F7F6249A35A300A49026 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC34F7F7249A35A300A49026 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC34F7D5249A359E00A49026 /* SUSTechBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC34F804249A35A300A49026 /* Build configuration list for PBXNativeTarget "SUSTechBus" */;
+			buildPhases = (
+				EC34F7D4249A359E00A49026 /* Resources */,
+				EC34F803249A35A300A49026 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC34F7DD249A359E00A49026 /* PBXTargetDependency */,
+			);
+			name = SUSTechBus;
+			productName = SUSTechBus;
+			productReference = EC34F7D6249A359E00A49026 /* SUSTechBus.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		EC34F7D9249A359E00A49026 /* SUSTechBus WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC34F800249A35A300A49026 /* Build configuration list for PBXNativeTarget "SUSTechBus WatchKit App" */;
+			buildPhases = (
+				EC34F7D8249A359E00A49026 /* Resources */,
+				EC34F7FF249A35A300A49026 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC34F7EC249A35A200A49026 /* PBXTargetDependency */,
+			);
+			name = "SUSTechBus WatchKit App";
+			productName = "SUSTechBus WatchKit App";
+			productReference = EC34F7DA249A359E00A49026 /* SUSTechBus WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EC34F7E8249A35A200A49026 /* SUSTechBus WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC34F7FC249A35A300A49026 /* Build configuration list for PBXNativeTarget "SUSTechBus WatchKit Extension" */;
+			buildPhases = (
+				EC34F7E5249A35A200A49026 /* Sources */,
+				EC34F7E6249A35A200A49026 /* Frameworks */,
+				EC34F7E7249A35A200A49026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SUSTechBus WatchKit Extension";
+			productName = "SUSTechBus WatchKit Extension";
+			productReference = EC34F7E9249A35A200A49026 /* SUSTechBus WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC34F7D0249A359E00A49026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "石文轩";
+				TargetAttributes = {
+					EC34F7D5249A359E00A49026 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					EC34F7D9249A359E00A49026 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					EC34F7E8249A35A200A49026 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = EC34F7D3249A359E00A49026 /* Build configuration list for PBXProject "SUSTechBus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC34F7CF249A359E00A49026;
+			productRefGroup = EC34F7D7249A359E00A49026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC34F7D5249A359E00A49026 /* SUSTechBus */,
+				EC34F7D9249A359E00A49026 /* SUSTechBus WatchKit App */,
+				EC34F7E8249A35A200A49026 /* SUSTechBus WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC34F7D4249A359E00A49026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC34F7D8249A359E00A49026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC34F7E3249A35A200A49026 /* Assets.xcassets in Resources */,
+				EC34F7E1249A359E00A49026 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC34F7E7249A35A200A49026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC34F7F8249A35A300A49026 /* Preview Assets.xcassets in Resources */,
+				EC34F7F5249A35A300A49026 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC34F7E5249A35A200A49026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC34F7F1249A35A200A49026 /* HostingController.swift in Sources */,
+				EC34F7EF249A35A200A49026 /* ContentView.swift in Sources */,
+				EC34F7F3249A35A200A49026 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC34F7DD249A359E00A49026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC34F7D9249A359E00A49026 /* SUSTechBus WatchKit App */;
+			targetProxy = EC34F7DC249A359E00A49026 /* PBXContainerItemProxy */;
+		};
+		EC34F7EC249A35A200A49026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC34F7E8249A35A200A49026 /* SUSTechBus WatchKit Extension */;
+			targetProxy = EC34F7EB249A35A200A49026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC34F7DF249A359E00A49026 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC34F7E0249A359E00A49026 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC34F7FA249A35A300A49026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC34F7FB249A35A300A49026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC34F7FD249A35A300A49026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SUSTechBus WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7DN923F8U9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SUSTechBus WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whexy.sustech.SUSTechBus.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		EC34F7FE249A35A300A49026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SUSTechBus WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7DN923F8U9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SUSTechBus WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whexy.sustech.SUSTechBus.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		EC34F801249A35A300A49026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DN923F8U9;
+				IBSC_MODULE = SUSTechBus_WatchKit_Extension;
+				INFOPLIST_FILE = "SUSTechBus WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whexy.sustech.SUSTechBus.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		EC34F802249A35A300A49026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DN923F8U9;
+				IBSC_MODULE = SUSTechBus_WatchKit_Extension;
+				INFOPLIST_FILE = "SUSTechBus WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whexy.sustech.SUSTechBus.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		EC34F805249A35A300A49026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7DN923F8U9;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whexy.sustech.SUSTechBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EC34F806249A35A300A49026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7DN923F8U9;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whexy.sustech.SUSTechBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC34F7D3249A359E00A49026 /* Build configuration list for PBXProject "SUSTechBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC34F7FA249A35A300A49026 /* Debug */,
+				EC34F7FB249A35A300A49026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC34F7FC249A35A300A49026 /* Build configuration list for PBXNativeTarget "SUSTechBus WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC34F7FD249A35A300A49026 /* Debug */,
+				EC34F7FE249A35A300A49026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC34F800249A35A300A49026 /* Build configuration list for PBXNativeTarget "SUSTechBus WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC34F801249A35A300A49026 /* Debug */,
+				EC34F802249A35A300A49026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC34F804249A35A300A49026 /* Build configuration list for PBXNativeTarget "SUSTechBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC34F805249A35A300A49026 /* Debug */,
+				EC34F806249A35A300A49026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC34F7D0249A359E00A49026 /* Project object */;
+}
