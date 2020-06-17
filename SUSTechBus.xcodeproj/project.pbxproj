@@ -11,11 +11,13 @@
 		EC34F7E1249A359E00A49026 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC34F7DF249A359E00A49026 /* Interface.storyboard */; };
 		EC34F7E3249A35A200A49026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC34F7E2249A35A200A49026 /* Assets.xcassets */; };
 		EC34F7EA249A35A200A49026 /* SUSTechBus WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC34F7E9249A35A200A49026 /* SUSTechBus WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EC34F7EF249A35A200A49026 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34F7EE249A35A200A49026 /* ContentView.swift */; };
+		EC34F7EF249A35A200A49026 /* BusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34F7EE249A35A200A49026 /* BusView.swift */; };
 		EC34F7F1249A35A200A49026 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34F7F0249A35A200A49026 /* HostingController.swift */; };
 		EC34F7F3249A35A200A49026 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34F7F2249A35A200A49026 /* ExtensionDelegate.swift */; };
 		EC34F7F5249A35A300A49026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC34F7F4249A35A300A49026 /* Assets.xcassets */; };
 		EC34F7F8249A35A300A49026 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC34F7F7249A35A300A49026 /* Preview Assets.xcassets */; };
+		EC34F809249A35D300A49026 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34F807249A35D300A49026 /* Bus.swift */; };
+		EC34F80A249A35D300A49026 /* BusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34F808249A35D300A49026 /* BusViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,18 +63,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6BDBDAE573E3236D6D06B011 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		EC34F7D6249A359E00A49026 /* SUSTechBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUSTechBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC34F7DA249A359E00A49026 /* SUSTechBus WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUSTechBus WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC34F7E0249A359E00A49026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		EC34F7E2249A35A200A49026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC34F7E4249A35A200A49026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC34F7E9249A35A200A49026 /* SUSTechBus WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SUSTechBus WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC34F7EE249A35A200A49026 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC34F7EE249A35A200A49026 /* BusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusView.swift; sourceTree = "<group>"; };
 		EC34F7F0249A35A200A49026 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		EC34F7F2249A35A200A49026 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		EC34F7F4249A35A300A49026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC34F7F7249A35A300A49026 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC34F7F9249A35A300A49026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC34F807249A35D300A49026 /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		EC34F808249A35D300A49026 /* BusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,7 @@
 				EC34F7DE249A359E00A49026 /* SUSTechBus WatchKit App */,
 				EC34F7ED249A35A200A49026 /* SUSTechBus WatchKit Extension */,
 				EC34F7D7249A359E00A49026 /* Products */,
+				6BDBDAE573E3236D6D06B011 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,7 +124,9 @@
 		EC34F7ED249A35A200A49026 /* SUSTechBus WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				EC34F7EE249A35A200A49026 /* ContentView.swift */,
+				EC34F807249A35D300A49026 /* Bus.swift */,
+				EC34F808249A35D300A49026 /* BusViewModel.swift */,
+				EC34F7EE249A35A200A49026 /* BusView.swift */,
 				EC34F7F0249A35A200A49026 /* HostingController.swift */,
 				EC34F7F2249A35A200A49026 /* ExtensionDelegate.swift */,
 				EC34F7F4249A35A300A49026 /* Assets.xcassets */,
@@ -265,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC34F7F1249A35A200A49026 /* HostingController.swift in Sources */,
-				EC34F7EF249A35A200A49026 /* ContentView.swift in Sources */,
+				EC34F7EF249A35A200A49026 /* BusView.swift in Sources */,
+				EC34F809249A35D300A49026 /* Bus.swift in Sources */,
 				EC34F7F3249A35A200A49026 /* ExtensionDelegate.swift in Sources */,
+				EC34F80A249A35D300A49026 /* BusViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -400,6 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
