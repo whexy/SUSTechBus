@@ -15,47 +15,13 @@ struct BusView: View {
         ScrollView {
             VStack {
                 VStack(alignment: .leading) {
-                    HStack {
-                        Image(systemName: "chevron.up")
-                            .font(.title)
-                            .padding(.trailing)
-                        VStack(alignment: .leading) {
-                            Group {
-                                Text("欣园方向")
-                                    .font(.headline)
-                                Text("上一班 \(busViewModel.XinYuanPrevious)")
-                                Text("下一班 \(busViewModel.XinYuanNext)")
-                                    .foregroundColor(.red)
-                            }
-                        }
-                    }
+                    BusTableView(direction: "欣园", previous: busViewModel.XinYuanPrevious, next: busViewModel.XinYuanNext, iconName: "chevron.up")
                     
-                    HStack {
-                        Image(systemName: "chevron.down")
-                            .font(.title)
-                            .padding(.trailing)
-                        VStack(alignment: .leading) {
-                            Group {
-                                Text("科研楼方向")
-                                    .font(.headline)
-                                Text("上一班 \(busViewModel.KeYanLouPrevious)")
-                                Text("下一班 \(busViewModel.KeYanLouNext)")
-                                    .foregroundColor(.red)
-                            }
-                        }
-                    }
-                    
+                    BusTableView(direction: "科研楼", previous: busViewModel.KeYanLouPrevious, next: busViewModel.KeYanLouNext, iconName: "chevron.down")
                 }
+                
                 VStack {
-                    Group {
-                        if busViewModel.isOnWeekDay {
-                            Text("今天校巴按工作日运行")
-                                .fontWeight(.light)
-                        } else {
-                            Text("今天校巴按节假日运行")
-                                .fontWeight(.light)
-                        }
-                    }
+                    BusWorkView(isOnWeekDay: busViewModel.isOnWeekDay)
                     Text("当前时间 \(busViewModel.currentTime)")
                         .fontWeight(.light)
                 }
@@ -66,8 +32,17 @@ struct BusView: View {
         .contextMenu {
             Button(action:refreshBus) {
                 VStack {
-                    Image(systemName: "arrow.clockwise.circle")
-                    Text("Refresh")
+                    Image(systemName: "arrow.clockwise")
+                        .font(.title)
+                    Text("更新时间")
+                }
+            }
+            
+            Button(action: switchMode){
+                VStack {
+                    Image(systemName: "clock")
+                        .font(.title)
+                    Text("变更运行模式")
                 }
             }
         }
@@ -78,13 +53,60 @@ struct BusView: View {
         self.busViewModel = BusViewModel()
     }
     
+    private func switchMode() {
+        self.busViewModel.isOnWeekDay.toggle()
+    }
+    
 }
 
+struct BusTableView: View {
+    var direction: String
+    var previous: String
+    var next: String
+    var iconName: String
+    
+    var body : some View {
+        HStack {
+            Image(systemName: iconName)
+                .font(.title)
+                .padding(.trailing)
+            VStack(alignment: .leading) {
+                Group {
+                    Text("\(direction)方向")
+                        .font(.headline)
+                    Text("上一班 \(previous)")
+                    Text("下一班 \(next)")
+                        .foregroundColor(.red)
+                }
+            }
+        }
+    }
+    
+}
 
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        BusView()
+        Group {
+            BusView()
+            BusTableView(direction: "欣园", previous: "08:00", next: "09:00", iconName: "chevron.down")
+        }
+    }
+}
+
+struct BusWorkView: View {
+    var isOnWeekDay: Bool
+    
+    var body: some View {
+        Group {
+            if isOnWeekDay {
+                Text("今天校巴按工作日运行")
+                    .fontWeight(.light)
+            } else {
+                Text("今天校巴按节假日运行")
+                    .fontWeight(.light)
+            }
+        }
     }
 }
