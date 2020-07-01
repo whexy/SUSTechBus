@@ -7,6 +7,10 @@
 
 作为 Swift 和 SwiftUI 的上手项目，代码逻辑非常简单，仅用于练习。
 
+
+
+![](https://i.loli.net/2020/07/01/qzVZ9WyJReErI7O.png)
+
 ## update
 
 端午节：在法定节假日，无法获取校巴真实运行状态。加入了手动切换运行状态的功能。
