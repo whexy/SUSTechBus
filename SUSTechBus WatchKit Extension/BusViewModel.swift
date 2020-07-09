@@ -11,7 +11,7 @@ import Foundation
 struct BusViewModel {
     let calender = NSCalendar.current
     let dayFormatter = DateFormatter()
-    let currentDate = Date()
+    var currentDate = Date()
     let bus = Bus()
         
     init() {
@@ -55,4 +55,15 @@ struct BusViewModel {
     var KeYanLouNext: String {
         bus.getKeYanLouBus(currentDate, weekday: isOnWeekDay).1 ?? "空"
     }
+    
+    //---MARK: intents
+    
+    mutating func swichModel() {
+        isOnWeekDay.toggle()
+    }
+    
+    mutating func refreshBus() {
+        currentDate = Date()
+    }
+    
 }

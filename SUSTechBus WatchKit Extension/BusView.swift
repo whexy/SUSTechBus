@@ -27,11 +27,16 @@ struct BusView: View {
                 Spacer(minLength: 50)
                 
                 VStack {
-                    Button(action:refreshBus) {
+                    Button{
+                        self.busViewModel.refreshBus()
+                    } label: {
                         Text("更新时间")
                     }
                     
-                    Button(action: switchMode){
+                    Button {
+                        self.busViewModel.swichModel()
+                        
+                    } label:{
                         Text("变更运行模式")
                     }
                 }
@@ -39,15 +44,6 @@ struct BusView: View {
         }
         
     }
-    
-    private func refreshBus() {
-        self.busViewModel = BusViewModel()
-    }
-    
-    private func switchMode() {
-        self.busViewModel.isOnWeekDay.toggle()
-    }
-    
 }
 
 struct BusTableView: View {
