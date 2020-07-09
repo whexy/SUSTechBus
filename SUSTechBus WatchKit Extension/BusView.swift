@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct BusView: View {
-    @State var busViewModel: BusViewModel = BusViewModel()
+    @State private var busViewModel: BusViewModel = BusViewModel()
     
     var body: some View {
         ScrollView {
@@ -20,29 +20,20 @@ struct BusView: View {
                     BusTableView(direction: "科研楼", previous: busViewModel.KeYanLouPrevious, next: busViewModel.KeYanLouNext, iconName: "chevron.down")
                 }
                 
+                BusWorkView(isOnWeekDay: busViewModel.isOnWeekDay)
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                
+                Spacer(minLength: 50)
+                
                 VStack {
-                    BusWorkView(isOnWeekDay: busViewModel.isOnWeekDay)
-                    Text("当前时间 \(busViewModel.currentTime)")
-                        .fontWeight(.light)
-                }
-                .font(.footnote)
-                .foregroundColor(.secondary)
-            }
-        }
-        .contextMenu {
-            Button(action:refreshBus) {
-                VStack {
-                    Image(systemName: "arrow.clockwise")
-                        .font(.title)
-                    Text("更新时间")
-                }
-            }
-            
-            Button(action: switchMode){
-                VStack {
-                    Image(systemName: "clock")
-                        .font(.title)
-                    Text("变更运行模式")
+                    Button(action:refreshBus) {
+                        Text("更新时间")
+                    }
+                    
+                    Button(action: switchMode){
+                        Text("变更运行模式")
+                    }
                 }
             }
         }
@@ -90,7 +81,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             BusView()
-            BusTableView(direction: "欣园", previous: "08:00", next: "09:00", iconName: "chevron.down")
         }
     }
 }
